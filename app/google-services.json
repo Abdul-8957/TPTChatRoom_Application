@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "618728022160",
+    "project_id": "tpt-chat-room",
+    "storage_bucket": "tpt-chat-room.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:618728022160:android:f8928193a519fea31b7815",
+        "android_client_info": {
+          "package_name": "com.example.tptchatroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "618728022160-ggaoaoidfp59n3v4oqbe9ccie3c6kcsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw2zX5tM4aKB4Ms7I0LY-70-i-V9B9yAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "618728022160-ggaoaoidfp59n3v4oqbe9ccie3c6kcsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
