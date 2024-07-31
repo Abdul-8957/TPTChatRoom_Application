@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="6sp"
+        android:layout_marginLeft="6sp"
+        android:layout_marginTop="6sp"
+        android:layout_marginEnd="6sp"
+        android:layout_marginRight="6sp"
+        android:layout_marginBottom="6sp"
+        android:background="@drawable/sendermsgbg"
+        android:gravity="center_vertical"
+        android:maxWidth="300dp"
+        android:maxHeight="400dp"
+        android:minWidth="100dp"
+        android:minHeight="60dp"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:id="@+id/sendermsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:inputType="textMultiLine"
+            android:maxWidth="280dp"
+            android:maxHeight="380dp"
+            android:padding="8sp"
+            android:text="hello how are you.."
+            android:textColor="@color/black"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/sendermsgtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="12:30 AM"></TextView>
+    </LinearLayout>
+</RelativeLayout>
