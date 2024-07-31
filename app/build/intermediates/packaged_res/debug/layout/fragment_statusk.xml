@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StatuskFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:id="@+id/addstory"
+           android:padding="10sp"
+           android:background="@color/lightgray">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="50sp"
+                   android:layout_height="50sp"
+                   android:id="@+id/mystatuspic"
+                   android:src="@drawable/defaultusericon"
+                   app:civ_border_color="@color/black"
+                   app:civ_border_width="2sp"></de.hdodenhof.circleimageview.CircleImageView>
+
+               <ImageView
+                   android:id="@+id/addusericon"
+                   android:layout_width="30sp"
+                   android:layout_height="30sp"
+                   android:layout_marginLeft="30sp"
+                   android:layout_marginTop="25sp"
+                   android:background="@drawable/camerabg"
+                   android:padding="2sp"
+                   android:src="@drawable/ic_baseline_add_24"></ImageView>
+           </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:paddingLeft="15dp"
+               android:textSize="22sp"
+               android:textStyle="bold"
+               android:text="My Status"></TextView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:paddingLeft="15sp"
+                   android:text="Tap to add status update"
+                   android:textSize="15sp"
+                   android:gravity="right|bottom"
+                   android:id="@+id/statususertime"></TextView>
+           </LinearLayout>
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Recent updated"
+           android:textSize="18sp"
+           android:padding="5sp"
+           android:layout_marginLeft="10sp"
+           android:layout_marginBottom="10sp"></TextView>
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/userstoryrecycler"
+           ></androidx.recyclerview.widget.RecyclerView>
+   </LinearLayout>
+
+</FrameLayout>

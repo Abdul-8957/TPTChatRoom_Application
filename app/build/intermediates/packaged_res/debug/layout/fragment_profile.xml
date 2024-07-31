@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--<ImageView-->
+<!--    android:layout_width="25sp"-->
+<!--    android:layout_height="25sp"-->
+<!--    android:src="@drawable/ic_baseline_keyboard_backspace_24"-->
+<!--    android:id="@+id/btnbackprofile"-->
+<!--    android:layout_margin="5sp"></ImageView>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="@color/darkgreen"
+        android:fontFamily="cursive"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"
+        android:paddingTop="3sp"
+        android:paddingLeft="10sp"></TextView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/usericon"
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginRight="30sp"
+            android:padding="3sp"
+            android:src="@drawable/person"
+            app:civ_border_color="@color/green"
+            app:civ_border_width="2sp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <ImageView
+            android:id="@+id/addusericon"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="170sp"
+            android:layout_marginTop="90sp"
+            android:background="@drawable/camerabg"
+            android:padding="7sp"
+            android:src="@drawable/ic_baseline_camera_alt_24_white"></ImageView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilename"
+            android:text="username"
+            android:textSize="20sp"
+            android:id="@+id/usernameprofile"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textStyle="bold|italic"
+            ></TextView>
+<!--        <ImageView-->
+<!--            android:layout_width="20sp"-->
+<!--            android:layout_height="25sp"-->
+<!--            android:id="@+id/editname"-->
+<!--            android:src="@drawable/ic_baseline_edit_24"-->
+<!--            ></ImageView>-->
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="update your about"
+        android:textSize="16sp"
+        android:layout_marginLeft="20sp"
+       android:background="@color/white"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="5sp"
+        android:inputType="textMultiLine"
+        android:id="@+id/userabout"
+        android:gravity="center"
+        ></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Now"
+        android:background="@color/green"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        android:id="@+id/adduserabout"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/bggreen"
+        android:orientation="vertical"
+        android:paddingLeft="25sp"
+        android:paddingTop="20sp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="23sp"
+                android:layout_height="23sp"
+                android:layout_marginTop="3sp"
+                android:background="@drawable/circle"
+                android:padding="2sp"
+                android:src="@drawable/i_design"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="25sp"
+                android:text="There are using chit chat"
+                android:id="@+id/txtaboutprofile"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+
+<!--            <ImageView-->
+<!--                android:layout_width="22sp"-->
+<!--                android:layout_height="22sp"-->
+<!--                android:paddingTop="4sp"-->
+<!--                android:src="@drawable/ic_baseline_edit_24_white"></ImageView>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="3sp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_baseline_person_24"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="25sp"
+                android:text="username"
+                android:id="@+id/txtnameprofile"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="23sp"
+                android:layout_height="23sp"
+                android:layout_marginTop="3sp"
+                android:background="@drawable/circle"
+                android:padding="2sp"
+                android:src="@drawable/ic_baseline_call_24"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="25sp"
+                android:text="usermobileno."
+                android:id="@+id/txtmobileprofile"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2sp">
+
+            <ImageView
+                android:layout_width="23sp"
+                android:layout_height="23sp"
+                android:layout_marginTop="3sp"
+                android:background="@drawable/circle"
+                android:padding="2sp"
+                android:src="@drawable/ic_baseline_email_24"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingLeft="25sp"
+                android:text="useremail"
+                android:id="@+id/txtemailprofile"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
